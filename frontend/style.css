@@ -1,0 +1,85 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --White: hsl(0, 0%, 100%);
+    --Slate-100: hsl(202, 86%, 94%);
+    --Slate-300: hsl(203, 41%, 72%);
+    --Slate-500: hsl(200, 26%, 54%);
+    --Slate-700: hsl(200, 24%, 40%);
+    --Slate-900: hsl(202, 55%, 16%);
+}
+
+body{
+    background-color: var(--Slate-300);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+body p{
+    font-size: 16px;
+}
+
+.right-box{
+    height: 600px;
+    width: 600px;
+    background-color: var(--Slate-900);
+    border-bottom-left-radius: 128px;
+    border-top-right-radius: 16px;
+    border-bottom-right-radius: 16px;
+    gap: 1.725em;
+}
+
+.left-box{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    height: 600px;
+    width: 600px;
+    background-color: var(--White);
+    border-radius: 16px;
+    padding: 50px;
+    gap: 0.725em;
+}
+
+.container{
+    display: flex;
+    justify-content: flex-end;
+    height: 600px;
+    width: 1200px;
+    background-color: var(--White);
+    border-radius: 16px;
+}
+
+.header_left-box{
+    display: flex;
+    justify-content: space-between;
+}
+
+.mortgage-term__interest-rate{
+    display: flex;
+    justify-content: space-between;
+}
+
+.mortgage-type{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+}
+
+.radio-container{
+    border: 1px solid var(--Slate-900);
+    color: var(--Slate-900);
+    font-weight: bolder;
+    padding: 10px;
+    border-radius: 5px;
+}
