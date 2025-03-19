@@ -14,11 +14,14 @@
         <div class="container">
                 <div class="left-box">
                  <header class="header_left-box">
-                    <h1>Mortgage Calculator</h1>
+                    <h1 class="header__h1">Mortgage Calculator</h1>
                     <button type="button" id="button-clear" class="button-clear">Clear All</button>
                  </header>
-                    <label for="">Mortgage Amount</label>
-                    <input type="number">
+                    <div class="mortgage-amount__box">
+                        <label id="mortgage-amount__label" for="">Mortgage Amount
+                        <input placeholder="£" type="number" id="mortgage-amount__input">
+                        </label>
+                    </div>
                     <div class="mortgage-term__interest-rate">
                         <div class="mortgage-term">
                             <label for="">Mortgage Term</label>
@@ -40,6 +43,8 @@
                         Interest Only
                     </label>
                 </div>
+                <button class="button-calculate" id="button-calculate"><img src="../assets/images/icon-calculator.svg" alt=""> Calculate Repayments
+                </button>
                 </div>
                 <div class="right-box">
 
