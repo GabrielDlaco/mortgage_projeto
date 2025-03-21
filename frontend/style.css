@@ -33,6 +33,10 @@ body p {
 }
 
 .right-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
     height: 600px;
     width: 550px;
     background-color: var(--Slate-900);
@@ -200,4 +204,96 @@ label {
     display: flex;
     flex-direction: column;
     gap: 0.725em;
+}
+
+.box-icon{
+    display: flex;
+}
+
+.icon{
+    width: 40px;
+    border-top: var(--Slate-500) 1.5px solid;
+    border-left: var(--Slate-500) 1.5px solid;
+    border-bottom: var(--Slate-500) 1.5px solid;
+    border-right: var(--Slate-100) 1.5px solid;
+    background-color: var(--Slate-100);
+    border-top-left-radius: 7px;
+    border-bottom-left-radius: 7px;
+    color: var(--Slate-700);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#mortgage-amount__input{
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    border-left: 0px solid;
+    width: 100%;
+}
+
+.calculator-img{
+    height: 175px;
+    width: 175px;
+}
+
+.h2__right-box{
+    color: var(--White);
+}
+
+.results-msg{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 1.725em;
+    padding-left: 5em;
+    padding-right: 5em;
+}
+
+.results-msg p{
+    color: var(--Slate-300);
+}
+
+.icon-term{
+    width: 60px;
+    border-top: var(--Slate-500) 1.5px solid;
+    border-left: var(--Slate-500) 0px solid;
+    border-bottom: var(--Slate-500) 1.5px solid;
+    border-right: var(--Slate-500) 1.5px solid;
+    background-color: var(--Slate-100);
+    border-top-right-radius: 7px;
+    border-bottom-right-radius: 7px;
+    color: var(--Slate-700);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#input-term{
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    border-right: 0;
+    width: 150px;
+}
+
+.icon-rate{
+    width: 40px;
+    border-top: var(--Slate-500) 1.5px solid;
+    border-left: var(--Slate-500) 0px solid;
+    border-bottom: var(--Slate-500) 1.5px solid;
+    border-right: var(--Slate-500) 1.5px solid;
+    background-color: var(--Slate-100);
+    border-top-right-radius: 7px;
+    border-bottom-right-radius: 7px;
+    color: var(--Slate-700);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#input-rate{
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    border-right: 0;
+    width: 150px;
 }

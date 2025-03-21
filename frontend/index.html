@@ -19,17 +19,30 @@
                  </header>
                     <div class="mortgage-amount__box">
                         <label id="mortgage-amount__label" for="">Mortgage Amount
-                        <input placeholder="£" type="number" id="mortgage-amount__input">
+                        <div class="box-icon">
+                            <div class="icon"><p>£</p></div>
+                            <input placeholder="" type="number" id="mortgage-amount__input" class="mortgage-amount__input">
+                        </div>
                         </label>
                     </div>
                     <div class="mortgage-term__interest-rate">
                         <div class="mortgage-term">
                             <label for="">Mortgage Term</label>
-                            <input type="number">
+                            <div class="box-icon">
+                                <input id="input-term" type="number">
+                                <div class="icon-term">
+                                    <p>years</p>
+                                </div>
+                            </div>
                         </div>
                         <div class="interest-rate">
                             <label for="">Interest Rate</label>
-                            <input type="number">
+                            <div class="box-icon">
+                                <input id="input-rate" type="number">
+                                <div class="icon-rate">
+                                    <p>%</p>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 <div class="mortgage-type">
@@ -47,7 +60,12 @@
                 </button>
                 </div>
                 <div class="right-box">
+                    <img class="calculator-img" src="../assets/images/illustration-empty.svg" alt="Calculator">
+                    <div id="results-msg" class="results-msg">
+                        <h2 class="h2__right-box">Results shown here</h2>
 
+                        <p>complete the form and click "calculate repayments" to see what your monthly repayments would be.</p>
+                    </div>
                 </div>
         </div>
     </main>
